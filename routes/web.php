@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile/{id}', 'userController@profile')->name('profile');
 Route::get('/user/avatar/{fileName}', 'userController@getImage')->name('user.avatar');
+Route::post('/user/avatar/upload', 'userController@uploadAvatar')->name('user.avatar.upload');
