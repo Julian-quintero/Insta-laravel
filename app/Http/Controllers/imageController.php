@@ -25,6 +25,13 @@ class imageController extends Controller
         $image->user_id = $user->id;
         $image->description = $description;
     }
+
+    function getAll(){
+
+
+
+        
+    }
     
    
 }
