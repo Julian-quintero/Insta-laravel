@@ -1,13 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="card" style="width:100%">
-    <div class="d-flex justify-content-center ">
-        <img style="width: 100px; height: 100px" class="img-thumbnail card-img-top" src="{{route('user.avatar',['fileName'=>$image->user->image])}}" alt="Card image cap">
+<div class="d-flex justify-content-center"> 
+    <div style="width:500px;height:500px" class="">
+        <img class="img-thumbnail card-img-top img-fluid" src="{{route('user.avatar',['fileName'=>$image->user->image])}}" alt="Card image cap">
     </div>
+    </div>
+
+    
     <div class="card-body">
 
-        <h5 class="card-title d-flex justify-content-center">{{Auth::user()->name}}</h5>
+        <h2 class="card-title d-flex justify-content-center">{{Auth::user()->name}}</h2>
 
 
 
